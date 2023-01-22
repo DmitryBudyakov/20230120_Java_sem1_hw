@@ -7,8 +7,14 @@ import java.util.Scanner;
  */
 public class triangle_number {
 public static void main(String[] args) {
-    System.out.println("Вычисление треугольного числа\n" +
-                        "-----------------------------");
+    StringBuilder sb = new StringBuilder();
+    String header = "Вычисление треугольного числа";
+    for (int i = 0; i < header.length(); i++) {
+        sb.append("-");
+    }
+    System.out.println(header + "\n" + sb);
+    // System.out.println("Вычисление треугольного числа\n" +
+    //                     "-----------------------------");
     int number = getIntFromTerm("Введите натуральное число: ");
 
     int triangle_num = getTriangleNumber(number);
